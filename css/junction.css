@@ -269,7 +269,7 @@ text-align: center;
 .designation{
 font-size: 22px!important;
   line-height: 30px!important;
-  color: #E86465!important;
+  color: #111!important;
 }
 .contact-container {
   margin: 50px 0;
@@ -324,4 +324,12 @@ font-family: gillsans;
 }
 .text-black{
 color:#111;
+}
+.badge.badge-secondary {
+  background-color: #ee4749;
+  color: #ffffff;
+}
+.jobhead
+{
+color: #E86465!important;
 }
