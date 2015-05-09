@@ -312,3 +312,16 @@ font-size: 22px!important;
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
+.content-header
+{
+font-family: gillsans;
+  font-weight: 200;
+  text-rendering: optimizespeed;
+  text-transform: capitalize;
+  padding-bottom: 37px;
+  color: #373435;
+  font-size: 51px;
+}
+.text-black{
+color:#111;
+}
