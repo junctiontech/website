@@ -333,3 +333,10 @@ color:#111;
 {
 color: #E86465!important;
 }
+.text-red{
+color:#E86465;
+}
+.text-red h2{
+color:#E86465;
+  font-size: 20px;
+}

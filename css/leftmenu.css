@@ -236,7 +236,8 @@ a, a:visited {
   display: inline-block;
   font-family: 'Entypo';
   color: #454a54;
-  color: #FFF;
+  /* color: #FFF; */
+  color:#E86465;
   float: right;
   font-size: 15px;
   margin-left: 13px;
