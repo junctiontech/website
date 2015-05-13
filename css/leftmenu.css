@@ -68,7 +68,9 @@
   display: block;
   vertical-align: middle;
   white-space: nowrap;
-  float: left;
+/*   float: left; commented by palak for logo*/
+  text-align: center;
+
 }
 .page-container .sidebar-menu .logo-env > div > a {
   display: inline-block;
