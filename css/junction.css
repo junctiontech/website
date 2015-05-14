@@ -340,3 +340,15 @@ color:#E86465;
 color:#E86465;
   font-size: 20px;
 }
+#formbox{width:280px;height:231px;border:1px solid #7F7F7F;margin:0 auto;position:fixed;bottom:39px;right:22px;z-index:300;font-family:Calibri;background-image:-ms-linear-gradient(top left, #EDEDED 0%, #BEBEBE 100%);background-image:-moz-linear-gradient(top left, #EDEDED 0%, #BEBEBE 100%);background-image:-o-linear-gradient(top left, #EDEDED 0%, #BEBEBE 100%);background-image:-webkit-gradient(linear, left top, right bottom, color-stop(0, #EDEDED), color-stop(1, #BEBEBE));background-image:-webkit-linear-gradient(top left, #EDEDED 0%, #BEBEBE 100%);background-image:linear-gradient(to bottom right, #EDEDED 0%, #BEBEBE 100%);background:linear-gradient(#EDEDED, #BEBEBE);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#EDEDED', endColorstr='#BEBEBE');}
+#formbox input[type="submit"]{height:32px;width:82px;margin-right:18px;position:relative;top:2px;color:#fff;background-image:-ms-linear-gradient(top, #FF8F28 30%, #D1701E 100%);background-image:-moz-linear-gradient(top, #FF8F28 30%, #D1701E 100%);background-image:-o-linear-gradient(top, #FF8F28 30%, #D1701E 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0.3, #FF8F28), color-stop(1, #D1701E));background-image:-webkit-linear-gradient(top, #FF8F28 30%, #D1701E 100%);background-image:linear-gradient(to bottom, #FF8F28 30%, #D1701E 100%);background:linear-gradient(#FF8F28, #D1701E);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FF8F28', endColorstr='#D1701E');font-weight:bold;font-size:14px;cursor:pointer;}
+#formbox p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+  color: #E86465;
+}
+.margin-form{
+  margin: 10px;
+}
