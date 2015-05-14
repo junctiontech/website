@@ -335,18 +335,18 @@
 		</div>
 		<!-- Forms starts -->
 		<div id="formbox" style="display:none;" >
-			<form class="contact-form validate" role="form" method="post" action="" enctype="application/x-www-form-urlencoded">
+			<form class="contact-form validate" role="form" method="post" action="mailto:info@junctiontech.in" enctype="application/x-www-form-urlencoded">
 					<p>We will be Happy to Help!</p>
 					<div class="form-group margin-form">
-						<input type="text" name="name" class="form-control" placeholder="Name:" name="min_field" data-validate="number,minlength[4]">
+						<input type="text" class="form-control" placeholder="Name:" name="name" data-validate="number,minlength[4]" required>
 					</div>
 					
 					<div class="form-group margin-form">
-						<input type="text" name="email" class="form-control" placeholder="E-mail:" name="email" data-validate="email">
+						<input type="text" name="email" class="form-control" placeholder="E-mail:" type="email"  data-validate="email" required>
 					</div>
 									
 					<div class="form-group text-right margin-form">
-						<button class="btn btn-primary" name="send">Send</button>
+						<button class="btn btn-primary" type="submit" name="send">Send</button>
 					</div>
 					
 				</form>
