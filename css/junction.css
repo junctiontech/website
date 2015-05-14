@@ -87,6 +87,7 @@ h6 {font: normal 14px Arial, Helvetica, sans-serif; color:#911d00; text-decorati
 .thumbnail
 {
 background:none;
+  border: none;
 }
 /*End thumbnail css */
 /*For socail icons*/
