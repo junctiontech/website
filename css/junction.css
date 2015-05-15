@@ -93,6 +93,9 @@ background:none;
 /*For socail icons*/
 .ssk-sticky.ssk-right.ssk-center { top: 30%!important; }
 .ssk-sticky.ssk-right.ssk-center a{ margin-bottom: 8px;}
+@media (max-width:767px){
+.ssk-sticky.ssk-right.ssk-center { top: 45%!important; }
+ }
 /*For socail icons*/
 #contactbottomForm {
   width: 330px;
@@ -352,4 +355,9 @@ color:#E86465;
 }
 .margin-form{
   margin: 10px;
+}
+/* for responsive screen menu */
+.navbar-toggle
+{
+background-color: #ececec;
 }
