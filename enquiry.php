@@ -1,13 +1,12 @@
 <?php
     $to = "info@junctiontech.in";
-    $subject = "Contact Enquiry";
+    $subject = "Discuss Requirement";
      $name= $_POST['name'] ;
-   $subject="Contact Enquiry";
+   $subject="Discuss Requirement";
     $email = $_POST['email'] ;
-    $message = $_POST['message'] ;
-    
+     
     $headers = "From: $name";
-    $sent = mail($to, $subject, $message, $headers) ;
+    $sent = mail($to, $subject, $email, $headers) ;
 
     if ($sent) { 
       header("Location: http://junctiontech.in/thankyou.html");
