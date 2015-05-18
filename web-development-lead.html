@@ -52,7 +52,7 @@
 				<!-- add class "multiple-expanded" to allow multiple submenus to open -->
 				<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
 				<!-- Search Bar -->
-				<li class="active">
+				<li>
 					<a href="development.html">
 						<span>Software Development</span>
 					</a>
@@ -75,7 +75,7 @@
 					</ul>
 				</li>
 				
-				<li class="active">
+				<li>
 					<a href="training-and-development.html">
 						<span>Training</span>
 					</a>
@@ -102,7 +102,7 @@
 						</li>
 					</ul>
 				</li>
-				<li class="active">
+				<li>
 					<a href="erp.html">
 						<span>ERP</span>
 					</a>
@@ -192,39 +192,24 @@
 						<a href="" class="ssk ssk-linkedin"></a>
 				</div>
 			<!-- Right positioning social icons -->
-		
-		<div id="contactbottomForm">
+			<div id="contactbottomForm">
 			<div id="wrapper">
-				<div class="upaction" id="request_btn">
-				<img style="float: right;width:26px;height:26px;" class="arrowUp">Discuss your requirements with us
-				</div>
+			<div class="upaction" id="request_btn">
+			<img style="float: right;width:26px;height:26px;" class="arrowUp">Discuss your requirements with us
 			</div>
-		</div>
-		<!-- Forms starts -->
-		<div id="formbox" style="display:none;" >
-			<form class="contact-form validate" role="form" method="post" action="enquiry.php" enctype="application/x-www-form-urlencoded">
-					<p>We will be Happy to Help!</p>
-					<div class="form-group margin-form">
-						<input type="text" class="form-control" placeholder="Name:" name="name" data-validate="number,minlength[4]" required>
-					</div>
-					
-					<div class="form-group margin-form">
-						<input type="text" name="email" class="form-control" placeholder="E-mail:" type="email"  data-validate="email" required>
-					</div>
-									
-					<div class="form-group text-right margin-form">
-						<button class="btn btn-primary" type="submit" name="send">Send</button>
-					</div>
-					
-				</form>
-		</div>
-		<!-- Form ended -->
+			<div class="upaction" id="thank_request_btn" style="display:none;">
+			<img src="img/arrowdown.png" style="float: right;" alt="arrow">Discuss your requirements with us</div>
+			</div>
+			</div>
 	<!-- Footer -->
 	 <footer>
 				 <div class="row">
-				  <div class="col-md-2 footer-items">
-                 <a href="about.html"> 	<p class="footer-items">About</p></a>
-                </div>
+				  <div class="col-md-2 social">
+					<span class="fb">&nbsp;</span>
+						<span class="twitter">&nbsp;</span>
+						<span class="linkedin">&nbsp;</span>
+					
+					 </div>
 				 <div class="col-md-2">
                   <a href="services.html"><p class="footer-items">Services</p> </a>
                 </div>
@@ -260,12 +245,6 @@
 		<script src="js/resizeable.js"></script>
 			<script src="js/TweenMax.min.js"></script>
 		</div>
-<script>
-		$(document).ready(function(){
-			$("#contactbottomForm").click(function(){
-				$("#formbox").toggle();
-			});
-		});
-		</script>
+
 	</body>
 	</html>
