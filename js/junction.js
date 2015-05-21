@@ -1978,3 +1978,14 @@ function toggle_sidebar_menu(with_animation)
 		hide_sidebar_menu(with_animation);
 	}
 }
+    jQuery(document).ready(function($)
+    {
+        $("#main-menu li a#adisable1").unbind().click(function(ev)
+        {
+            ev.preventDefault();
+
+            alert("X")
+        });
+    });
+
+
