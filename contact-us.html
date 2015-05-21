@@ -6,7 +6,7 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Junction Tech" />
-	<meta name="author" content="junction Software" />
+	<meta name="author" content="" />
 	
 	<title>JunctionTech | Contact Us</title>
 	<!-- Bootstrap Core CSS -->
@@ -167,15 +167,15 @@
 			<form class="contact-form validate" role="form" method="post" action="contact.php" enctype="application/x-www-form-urlencoded">
 					
 					<div class="form-group">
-						<input type="text" name="name" class="form-control" placeholder="Name:" name="min_field" data-validate="number,minlength[4]">
+						<input type="text" name="name" class="form-control" placeholder="Name:" name="min_field" data-validate="number,minlength[4]" required>
 					</div>
 					
 					<div class="form-group">
-						<input type="text" name="email" class="form-control" placeholder="E-mail:" name="email" data-validate="email">
+						<input type="text" name="email" class="form-control" placeholder="E-mail:" name="email" data-validate="email" required>
 					</div>
 					
 					<div class="form-group">
-						<textarea class="form-control" name="message" placeholder="Message:" rows="6"></textarea>
+						<textarea class="form-control" name="message" placeholder="Message:" rows="6" required></textarea>
 					</div>
 					
 					<div class="form-group text-right">
@@ -198,25 +198,38 @@
 					<a href="https://in.linkedin.com/in/junctiontech" class="ssk ssk-linkedin" target="_blank"></a>
 			</div>
 		<!-- Right positioning social icons -->
-		<div id="contactbottomForm">
+			<div id="contactbottomForm">
 			<div id="wrapper">
 				<div class="upaction" id="request_btn">
-					<img style="float: right;width:26px;height:26px;" class="arrowUp">Discuss your requirements with us
-				</div>
-				<div class="upaction" id="thank_request_btn" style="display:none;">
-					<img src="img/arrowdown.png" style="float: right;" alt="arrow">Discuss your requirements with us
+				<img style="float: right;width:26px;height:26px;" class="arrowUp">Discuss your requirements with us
 				</div>
 			</div>
 		</div>
+		<!-- Forms starts -->
+		<div id="formbox" style="display:none;" >
+			<form class="contact-form validate" role="form" method="post" action="mailto:info@junctiontech.in" enctype="application/x-www-form-urlencoded">
+					<p>We will be Happy to Help!</p>
+					<div class="form-group margin-form">
+						<input type="text" class="form-control" placeholder="Name:" name="name" data-validate="number,minlength[4]" required>
+					</div>
+					
+					<div class="form-group margin-form">
+						<input type="text" name="email" class="form-control" placeholder="E-mail:" type="email"  data-validate="email" required>
+					</div>
+									
+					<div class="form-group text-right margin-form">
+						<button class="btn btn-primary" type="submit" name="send">Send</button>
+					</div>
+					
+				</form>
+		</div>
+		<!-- Form ended -->
 <!-- Footer -->
  <footer>
 			 <div class="row">
-			  <div class="col-md-2 social">
-				<a href="https://www.facebook.com/junctiontech" target="_blank" ><span class="fb">&nbsp;</span></a>
-				<a href="https://twitter.com/junctionsoft" target="_blank" ><span class="twitter">&nbsp;</span></a>
-				<a href="https://in.linkedin.com/in/junctiontech" target="_blank" ><span class="linkedin">&nbsp;</span></a>
-				
-				 </div>
+			<div class="col-md-2 footer-items">
+                 <a href="about.html"> 	<p class="footer-items">About</p></a>
+                </div>
 			  <div class="col-md-2">
                   <a href="services.html"><p class="footer-items">Services</p></a>
                 </div>
@@ -252,6 +265,12 @@
 	<script src="js/resizeable.js"></script>
 		<script src="js/TweenMax.min.js"></script>
 	</div>
-
+<script>
+		$(document).ready(function(){
+			$("#contactbottomForm").click(function(){
+				$("#formbox").toggle();
+			});
+		});
+		</script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Junction Tech" />
-	<meta name="author" content="junction Software" />
+	<meta name="author" content="" />
 	
 	<title>JunctionTech | Android</title>
 	<!-- Bootstrap Core CSS -->
@@ -53,13 +53,13 @@
     				<!-- add class "multiple-expanded" to allow multiple submenus to open -->
     				<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
     				<!-- Search Bar -->
-    				<li class="active opened" >
-    					<a href="development.html" onclick="window.location='development.html'">
+    				<li class="active opened disabled">
+    					<a href="development.html">
     						<span>Software Development</span>
     					</a>
     					<ul>
     						<li>
-    							<a href="webtechnology.html" onclick="window.location='webtechnology.html'">
+    							<a href="webtechnology.html">
     								<span class="submenu">Web Technologies</span>
     							</a>
     							<ul>
@@ -71,7 +71,7 @@
     							</ul>
     						</li>
     						<li class="opened">
-    							<a href="mobileplatform.html" onclick="window.location='mobileplatform.html'" >
+    							<a href="mobileplatform.html">
     								<span class="submenu">Mobile Platforms</span>
     							</a>
     							<ul>
@@ -91,7 +91,7 @@
     				</li>
 
     				<li class="active">
-    					<a href="training-and-development.html" onclick="window.location='training-and-development.html'">
+    					<a href="training-and-development.html">
     						<span>Training</span>
     					</a>
     					<ul>
@@ -118,7 +118,7 @@
     					</ul>
     				</li>
     				<li class="active">
-    					<a href="erp.html" onclick="window.location='erp.html'">
+    					<a href="erp.html">
     						<span>ERP</span>
     					</a>
     					<ul>
@@ -133,16 +133,6 @@
     							</a>
     						</li>
     					</ul>
-    				</li>
-					<li class="active">
-    					<a href="about.html">
-    						<span>About</span>
-    					</a>
-    				</li>
-					<li class="active">
-    					<a href="partners.html">
-    						<span>Partners</span>
-    					</a>
     				</li>
     				<li class="active">
     					<a href="careers.html">
@@ -209,21 +199,41 @@
 		<div id="contactbottomForm">
 			<div id="wrapper">
 				<div class="upaction" id="request_btn">
-					<img style="float: right;width:26px;height:26px;" class="arrowUp">Discuss your requirements with us
-				</div>
-				<div class="upaction" id="thank_request_btn" style="display:none;">
-					<img src="img/arrowdown.png" style="float: right;" alt="arrow">Discuss your requirements with us</div>
+				<img style="float: right;width:26px;height:26px;" class="arrowUp">Discuss your requirements with us
 				</div>
 			</div>
+		</div>
+		<!-- Forms starts -->
+		<div id="formbox" style="display:none;" >
+			<form class="contact-form validate" role="form" method="post" action="mailto:info@junctiontech.in" enctype="application/x-www-form-urlencoded">
+					<p>We will be Happy to Help!</p>
+					<div class="form-group margin-form">
+						<input type="text" class="form-control" placeholder="Name:" name="name" data-validate="number,minlength[4]" required>
+					</div>
+					
+					<div class="form-group margin-form">
+						<input type="text" name="email" class="form-control" placeholder="E-mail:" type="email"  data-validate="email" required>
+					</div>
+									
+					<div class="form-group text-right margin-form">
+						<button class="btn btn-primary" type="submit" name="send">Send</button>
+					</div>
+					
+				</form>
+		</div>
+		<!-- Form ended -->
 			<!-- Footer -->
 			<footer>
 				<div class="row">
-					<div class="col-md-2 social">
+					<!--<div class="col-md-2 social">
 						<span class="fb">&nbsp;</span>
 						<span class="twitter">&nbsp;</span>
 						<span class="linkedin">&nbsp;</span>
 
-					</div>
+					</div>-->
+					<div class="col-md-2 footer-items">
+                 <a href="about.html"> 	<p class="footer-items">About</p></a>
+                </div>
 					<div class="col-md-2">
 						<p class="footer-items">Services</p>
 					</div>
@@ -258,6 +268,13 @@
 		<script src="js/joinable.js"></script>
 		<script src="js/resizeable.js"></script>
 		<script src="js/TweenMax.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#contactbottomForm").click(function(){
+				$("#formbox").toggle();
+			});
+		});
+		</script>
 	</div>
 
 </body>
