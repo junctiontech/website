@@ -1,5 +1,0 @@
-[15-May-2015 13:11:07 Etc/GMT] PHP Parse error:  syntax error, unexpected '}' in /home/junctwhx/public_html/contact.php on line 287
-[16-May-2015 07:33:07 Etc/GMT] PHP Warning:  mail() expects at least 3 parameters, 2 given in /home/junctwhx/public_html/contact.php on line 8
-[16-May-2015 07:35:06 Etc/GMT] PHP Warning:  mail() expects at least 3 parameters, 2 given in /home/junctwhx/public_html/contact.php on line 8
-[16-May-2015 07:35:17 Etc/GMT] PHP Warning:  mail() expects at least 3 parameters, 2 given in /home/junctwhx/public_html/contact.php on line 8
-[16-May-2015 07:47:09 Etc/GMT] PHP Parse error:  syntax error, unexpected '$email' (T_VARIABLE) in /home/junctwhx/public_html/contact.php on line 6
