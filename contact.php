@@ -1,18 +1,15 @@
 <?php
-    $to = "info@junctiontech.in";
-    $subject = "Contact Enquiry";
-     $name= $_POST['name'] ;
-   $subject="Contact Enquiry";
-    $email = $_POST['email'] ;
-    $message = $_POST['message'] ;
-	
-  $mail = "
+$to = "info@junctiontech.in";
+$subject="Contact Enquiry";
+$name= $_POST['name'] ;
+$email = $_POST['email'] ;
+$text = $_POST['text'] ;
+$message = "
 <html>
 <head>
 <title>Discuss Requirement</title>
 </head>
 <body>
-
 <table>
 <tr>
 <th>Name</th>
@@ -22,7 +19,7 @@
 <tr>
 <td>  $name </td>
 <td>  $email </td>
-<td>  $requirement</td>
+<td>  $text</td>
 </tr>
 </table>
 </body>
@@ -31,11 +28,10 @@
 
 // Always set content-type when sending HTML email
 $headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";  
-    $headers = "From: $name";
-    $sent = mail($to, $subject, $message,$mail, $headers) ;
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-    if ($sent) { 
+$sent =mail($to,$subject,$message,$headers);
+   if ($sent) { 
       header("Location: http://junctiontech.in/thankyou.html");
       exit();
     } else {
