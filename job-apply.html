@@ -26,71 +26,7 @@
 	        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	    <![endif]-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-		<script type="text/javascript">
-		$(document).ready(function() {
-			$("#submit_btn").click(function() { 
-			   
-				var proceed = true;
-				//simple validation at client's end
-				//loop through each field and we simply change border color to red for invalid fields		
-				$("#contact_form input[required=true], #contact_form textarea[required=true]").each(function(){
-					$(this).css('border-color',''); 
-					if(!$.trim($(this).val())){ //if this field is empty 
-						$(this).css('border-color','red'); //change border color to red   
-						proceed = false; //set do not proceed flag
-					}
-					//check invalid email
-					var email_reg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
-					if($(this).attr("type")=="email" && !email_reg.test($.trim($(this).val()))){
-						$(this).css('border-color','red'); //change border color to red   
-						proceed = false; //set do not proceed flag				
-					}	
-				});
-			   
-				if(proceed) //everything looks good! proceed...
-				{
-				   //data to be sent to server         
-					var m_data = new FormData();    
-					m_data.append( 'user_name', $('input[name=name]').val());
-					m_data.append( 'user_email', $('input[name=email]').val());
-					m_data.append( 'country_code', $('input[name=phone1]').val());
-					m_data.append( 'phone_number', $('input[name=phone2]').val());
-					m_data.append( 'subject', $('select[name=subject]').val());
-					m_data.append( 'msg', $('textarea[name=message]').val());
-					m_data.append( 'file_attach', $('input[name=file_attach]')[0].files[0]);
-					 
-					//instead of $.post() we are using $.ajax()
-					//that's because $.ajax() has more options and flexibly.
-					$.ajax({
-					  url: 'contact_me.php',
-					  data: m_data,
-					  processData: false,
-					  contentType: false,
-					  type: 'POST',
-					  dataType:'json',
-					  success: function(response){
-						 //load json data from server and output message     
-						if(response.type == 'error'){ //load json data from server and output message     
-							output = '<div class="error">'+response.text+'</div>';
-						}else{
-							output = '<div class="success">'+response.text+'</div>';
-						}
-						$("#contact_form #contact_results").hide().html(output).slideDown();
-					  }
-					});
-					
-
-				}
-			});
-			
-			//reset previously set border colors and hide all message on .keyup()
-			$("#contact_form  input[required=true], #contact_form textarea[required=true]").keyup(function() { 
-				$(this).css('border-color',''); 
-				$("#result").slideUp();
-			});
-		});
-		</script>	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	</head>
 	<body class="page-body boxed-layout" data-url="http://junctiontech.in" style=" background: url(img/dev_bg.png) #f6f5f6 no-repeat center top;background-size: cover; background-attachment: fixed;">
 
@@ -239,35 +175,36 @@
 			<div class="col-sm-12">
 				<p>Thank you for your interest in Junction Software Pvt.Ltd. Please provide the following information about your profile. We shall get in touch with you
 					</p>
-					 <div id="contact_results"></div>
-					<form class="contact-form validate" role="form" method="post" action="" enctype="application/x-www-form-urlencoded" id="contact_body">
+					<form class="contact-form validate" role="form" method="post" action="job_apply.php" enctype="multipart/form-data">
 						
 						<div class="form-group">
-							<input name="name" id="name" required="true" class="input-field form-control" placeholder="Name:" name="min_field" data-validate="number,minlength[4]">
-						</div>
-					
-							<div class="form-group">
-							<input type="email" name="email" required="true"  name="email" class="form-control" placeholder="E-mail:"  data-validate="email">
+							<input type="text" name="name" class="form-control" placeholder="Name:" name="min_field" data-validate="number,minlength[4]">
 						</div>
 						<div class="form-group">
-						<input type="text" name="phone2" maxlength="15"  required="true" class="tel-number-field long form-control "  placeholder="Contact No." />
+							<input type="text" name="phone" class="form-control" placeholder="Mobile No:" name="min_field" data-validate="number,minlength[4]">
 						</div>
 							<div class="form-group">
-							<input type="text" name="name" class="form-control" placeholder="Present Employer:" name="min_field" data-validate="number,minlength[4]">
+							<input type="text" name="email" class="form-control" placeholder="E-mail:" name="email" data-validate="email">
+						</div>
+						
+							<div class="form-group">
+							<input type="text" name="employer" class="form-control" placeholder="Present Employer:" name="min_field" data-validate="number,minlength[4]">
 						</div>
 						<div class="form-group">
-							<input type="text" name="name" class="form-control" placeholder="Present Designation:" name="min_field" data-validate="number,minlength[4]">
+							<input type="text" name="designation" class="form-control" placeholder="Present Designation:" name="min_field" data-validate="number,minlength[4]">
 						</div>
 						<div class="form-group">
 							<label class="control-label">Upload your resume</label>
-							 <input type="file" name="file_attach" class="input-field" />
+							<input type="file" name="fileupload" class="filestyle" >
 							<span style="padding-right: 5px; font-weight: bold;">File Format : </span><span style="font-size: 13px;">Plain Text, Rich Text, HTML, Word Document or PDF</span>
 						</div>
 					
-					
+						<div class="form-group">
+							<textarea class="form-control" name="message" placeholder="Message:" rows="6"></textarea>
+						</div>
 						
 						<div class="form-group text-right">
-							<button class="btn btn-primary" name="send" type="submit" id="submit_btn" value="Submit">Send</button>
+							<button class="btn btn-primary" name="send">Send</button>
 						</div>
 						
 					</form>
