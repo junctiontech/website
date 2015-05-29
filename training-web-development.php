@@ -26,11 +26,11 @@ include 'menu.php';
 				
 				<!-- Portfolio Item in Widget -->
 				<div class="portfolio-item">
-					<a href="php.html" class="image">
+					<a href="php.php" class="image">
 						<img src="img/PHP_framework.png" class="img-responsive img-center" alt="Php Framework and CMS" width="146" height="146">
 					</a>
 					<h4>
-					<a href="php.html" class="name">PHP Framework & CMS</a>
+					<a href="php.php" class="name">PHP Framework & CMS</a>
 					</h4>
 				</div>
 				

@@ -23,12 +23,12 @@ include 'menu.php';
 					
 					<!-- Portfolio Item in Widget -->
 					<div class="portfolio-item">
-						<a href="android.html" class="image">
+						<a href="android.php" class="image">
 							<img src="img/android.png" class="img-responsive img-center" alt="Android" width="146" height="146">
 						</a>
 						
 						<h4>
-						<a href="android.html" class="name">Android</a>
+						<a href="android.php" class="name">Android</a>
 						</h4>
 					</div>
 					

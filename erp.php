@@ -23,12 +23,12 @@ include 'menu.php';
 				
 				<!-- Portfolio Item in Widget -->
 				<div class="portfolio-item">
-					<a href="sap.html" class="image">
+					<a href="sap.php" class="image">
 						<img src="img/sap.png" class="img-responsive img-center" alt="sap" width="146" height="146">
 					</a>
 					
 					<h4>
-					<a href="sap.html" class="name">SAP</a>
+					<a href="sap.php" class="name">SAP</a>
 					</h4>
 				</div>
 				
@@ -37,12 +37,12 @@ include 'menu.php';
 				
 				<!-- Portfolio Item in Widget -->
 				<div class="portfolio-item">
-					<a href="junction-erp.html" class="image">
+					<a href="junction-erp.php" class="image">
 						<img src="img/erp.png" class="img-responsive img-center" alt="ERP" width="146" height="146">
 					</a>
 					
 					<h4>
-					<a href="junction-erp.html" class="name">Junction ERP</a>
+					<a href="junction-erp.php" class="name">Junction ERP</a>
 					</h4>
 				</div>
 				

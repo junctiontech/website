@@ -22,7 +22,7 @@ include 'menu.php';
 				  <dd>OOPS concepts, Web Development Concepts, MVC</dd>
 				   <dd>PHP, MySQL</dd>
 				   <dd>Knowledge of any one framework like Codeigniter Framework will be an added advantage.</dd>
-				   <dd>Ajax, JQuery, HTML, Java Script, CSS, XML</dd>
+				   <dd>Ajax, JQuery, php, Java Script, CSS, XML</dd>
 				   <br>
 				  <dt>Non-Technical Skills:</dt>
 				  <dd>Good communication skills (both written and verbal).</dd>
@@ -34,7 +34,7 @@ include 'menu.php';
 				   <dd>Technical Assistance to team for project implementation</dd>
 				   <dd>Interaction with client/TL during the whole project life cycle as SPOC for the team</dd>
 				</dl>
-				<a href="job-apply.html"><button type="button" class="btn btn-primary btn-icon">
+				<a href="job-apply.php"><button type="button" class="btn btn-primary btn-icon">
 					<i class="entypo-check"></i>		Apply
 							
 				</button></a>

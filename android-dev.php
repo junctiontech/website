@@ -33,7 +33,7 @@ include 'menu.php';
 				   <dd>Technical Assistance to team for project implementation</dd>
 				   <dd>Interaction with client/TL during the whole project life cycle as SPOC for the team</dd>
 				</dl>
-				<a href="job-apply.html"><button type="button" class="btn btn-primary btn-icon">
+				<a href="job-apply.php"><button type="button" class="btn btn-primary btn-icon">
 					<i class="entypo-check"></i>		Apply
 							
 				</button></a>

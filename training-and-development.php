@@ -28,12 +28,12 @@ include 'menu.php';
 					
 					<!-- Portfolio Item in Widget -->
 					<div class="portfolio-item">
-						<a href="training-web-development.html" class="image">
+						<a href="training-web-development.php" class="image">
 							<img src="img/web_tech.png" class="img-responsive img-center" alt="Training Web Development" width="146" height="146">
 						</a>
 						
 						<h4>
-						<a href="training-web-development.html" class="name">Web Development</a>
+						<a href="training-web-development.php" class="name">Web Development</a>
 						</h4>
 					</div>
 					
@@ -43,12 +43,12 @@ include 'menu.php';
 					
 					<!-- Portfolio Item in Widget -->
 					<div class="portfolio-item">
-						<a href="training-mobile-development.html" class="image">
+						<a href="training-mobile-development.php" class="image">
 							<img src="img/mobile_tech.png" class="img-responsive img-center" alt="Training Mobile Development" width="146" height="146">
 						</a>
 						
 						<h4>
-						<a href="training-mobile-development.html" class="name">Mobile Development</a>
+						<a href="training-mobile-development.php" class="name">Mobile Development</a>
 						</h4>
 					</div>
 					
@@ -58,12 +58,12 @@ include 'menu.php';
 					
 					<!-- Portfolio Item in Widget -->
 					<div class="portfolio-item">
-						<a href="training-sap.html" class="image">
+						<a href="training-sap.php" class="image">
 							<img src="img/sap.png" class="img-responsive img-center" alt="SAP Training" width="146" height="146">
 						</a>
 						
 						<h4>
-						<a href="training-sap.html" class="name">SAP</a>
+						<a href="training-sap.php" class="name">SAP</a>
 						</h4>
 					</div>
 					
@@ -72,12 +72,12 @@ include 'menu.php';
 			
 					<!-- Portfolio Item in Widget -->
 					<div class="portfolio-item">
-						<a href="training-custom.html" class="image">
+						<a href="training-custom.php" class="image">
 							<img src="img/customdevelopment.png" class="img-responsive img-center" alt="Custom Training" width="146" height="146">
 						</a>
 						
 						<h4>
-						<a href="training-custom.html" class="name">Custom</a>
+						<a href="training-custom.php" class="name">Custom</a>
 						</h4>
 					</div>
 					

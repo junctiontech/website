@@ -26,12 +26,12 @@ include 'menu.php';
 					
 					<!-- Portfolio Item in Widget -->
 					<div class="portfolio-item">
-						<a href="webtechnology.html" class="image">
+						<a href="webtechnology.php" class="image">
 							<img src="img/web_tech.png" class="img-responsive img-center" alt="web technologies" width="146" height="146">
 						</a>
 						
 						<h4>
-						<a href="webtechnology.html" class="name">Web Technologies</a>
+						<a href="webtechnology.php" class="name">Web Technologies</a>
 						</h4>
 					</div>
 					
@@ -41,12 +41,12 @@ include 'menu.php';
 					
 					<!-- Portfolio Item in Widget -->
 					<div class="portfolio-item">
-						<a href="mobileplatform.html" class="image">
+						<a href="mobileplatform.php" class="image">
 							<img src="img/mobile_tech.png" class="img-responsive img-center" alt="Mobile Platforms" width="146" height="146">
 						</a>
 						
 						<h4>
-						<a href="mobileplatform.html" class="name">Mobile Platforms</a>
+						<a href="mobileplatform.php" class="name">Mobile Platforms</a>
 						</h4>
 					</div>
 					
@@ -56,12 +56,12 @@ include 'menu.php';
 					
 					<!-- Portfolio Item in Widget -->
 					<div class="portfolio-item">
-						<a href="sap.html" class="image">
+						<a href="sap.php" class="image">
 							<img src="img/sap.png" class="img-responsive img-center" alt="SAP" width="146" height="146">
 						</a>
 						
 						<h4>
-						<a href="sap.html" class="name">SAP</a>
+						<a href="sap.php" class="name">SAP</a>
 						</h4>
 					</div>
 					

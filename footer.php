@@ -41,19 +41,19 @@
 		<footer>
 				<div class="row">
 					<div class="col-md-2 footer-items">
-                 <a href="about.html"> 	<p class="footer-items">About</p></a>
+                 <a href="about.php"> 	<p class="footer-items">About</p></a>
                 </div>
 					<div class="col-md-2">
-					<a href="services.html">	<p class="footer-items">Services</p></a>
+					<a href="services.php">	<p class="footer-items">Services</p></a>
 					</div>
 					<div class="col-md-2 footer-items">
-					<a href="partners.html"> 	<p class="footer-items">Partners</p></a>
+					<a href="partners.php"> 	<p class="footer-items">Partners</p></a>
 					</div>
 					<div class="col-md-2 footer-items">
-					<a href="careers.html"> 	<p class="footer-items">Careers</p></a>
+					<a href="careers.php"> 	<p class="footer-items">Careers</p></a>
 					</div>
 					<div class="col-md-2 footer-items">
-					<a href="contact-us.html"> 	<p class="footer-items">Contact Us</p></a>
+					<a href="contact-us.php"> 	<p class="footer-items">Contact Us</p></a>
 					</div>
 					<div class="col-md-2 footer-items">
 						<p class="footer-items">Sitemap</p>

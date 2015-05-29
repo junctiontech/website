@@ -16,17 +16,17 @@ include 'menu.php';
 	<div class="col-sm-12">
 		<h2 class="designation">Designation</h2>
 		<ul class="list-group">
-			<a href="web-development-lead.html"  class="jobhead" ><li class="list-group-item">
+			<a href="web-development-lead.php"  class="jobhead" ><li class="list-group-item">
 				<span class="badge badge-secondary">Vacancy-1</span>
 				Web Development Lead</li></a>
-				<a href="php-developer.html"  class="jobhead" ><li class="list-group-item">
+				<a href="php-developer.php"  class="jobhead" ><li class="list-group-item">
 					<span class="badge badge-secondary">Vacancy-1</span>
 					Senior PHP Developer
 				</li></a>
-				<a href="web-designer.html" class="jobhead" ><li class="list-group-item">
+				<a href="web-designer.php" class="jobhead" ><li class="list-group-item">
 					<span class="badge badge-secondary">Vacancy-2</span>
 					Web Designer</li></a>
-					<a href="android-dev.html"  class="jobhead" ><li class="list-group-item">
+					<a href="android-dev.php"  class="jobhead" ><li class="list-group-item">
 						<span class="badge badge-secondary">Vacancy-1</span>
 						Android Developer</li></a>
 					</ul>
