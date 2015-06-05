@@ -1,26 +1,35 @@
 <?php
 $to = "info@junctiontech.in";
-$subject = "Discuss Requirement";
+$subject = "Job Application";
 $name= $_POST['name'] ;
+$phone= $_POST['phone'] ;
+$employer= $_POST['employer'] ; 
 $email = $_POST['email'] ; 
-$requirement= $_POST['requirement'] ; 
+$designation= $_POST['designation'] ; 
+$fileupload= $_POST['fileupload'] ; 
 $message = "
 <html>
 <head>
-<title>Discuss Requirement</title>
+<title>Job Application</title>
 </head>
 <body>
 
 <table>
 <tr>
 <th>Name</th>
-<th>email</th>
-<th>Requirement</th>
+<th>Phone Number</th>
+<th>Email</th>
+<th>Employer</th>
+<th>Designation</th>
+<th>File</th>
 </tr>
 <tr>
 <td>  $name </td>
-<td>  $email </td>
-<td>  $requirement</td>
+<td>  $phone</td>
+<td>  $email</td>
+<td>  $employer</td>
+<td>  $designation</td>
+<td>  $fileupload</td>
 </tr>
 </table>
 </body>
