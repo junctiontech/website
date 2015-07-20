@@ -28,13 +28,11 @@ include 'menu.php';
 						</div>
 						<div class="form-group">
 							<label class="control-label">Upload your resume</label>
-							<input type="file" name="fileupload" class="filestyle" >
+							<input type="file" name="filename" class="filestyle" >
 							<span style="padding-right: 5px; font-weight: bold;">File Format : </span><span style="font-size: 13px;">Plain Text, Rich Text, HTML, Word Document or PDF</span>
 						</div>
 					
-						<div class="form-group">
-							<textarea class="form-control" name="message" placeholder="Message:" rows="6"></textarea>
-						</div>
+						
 						
 						<div class="form-group text-right">
 							<button class="btn btn-primary" name="send">Send</button>

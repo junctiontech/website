@@ -1,4 +1,3 @@
-
 		<!-- Right positioning social icons -->
 		<div class="ssk-sticky ssk-right ssk-center ssk-xs">
 			<a href="https://www.facebook.com/junctiontech" class="ssk ssk-facebook" target="_blank"></a>
@@ -56,7 +55,7 @@
 					<a href="contact-us.php"> 	<p class="footer-items">Contact Us</p></a>
 					</div>
 					<div class="col-md-2 footer-items">
-						<p class="footer-items">Sitemap</p>
+					<a href="sitemap.php"> 	<p class="footer-items">Sitemap</p></a>
 					</div>
 				</div>
 				<div class="row">

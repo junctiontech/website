@@ -1,13 +1,13 @@
 <?php
 $to = "info@junctiontech.in";
-$subject = "Discuss Requirement";
 $name= $_POST['name'] ;
+$subject = "Discuss Requirement- $name";
 $email = $_POST['email'] ; 
 $requirement= $_POST['requirement'] ; 
 $message = "
 <html>
 <head>
-<title>Discuss Requirement</title>
+<title>Discuss Requirement </title>
 </head>
 <body>
 
@@ -33,7 +33,7 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 $sent =mail($to,$subject,$message,$headers);
    if ($sent) { 
-      header("Location: http://junctiontech.in/thankyou.html");
+      header("Location: http://junctiontech.in/thankyou.php");
       exit();
     } else {
       print "We encountered an error sending your mail"; 

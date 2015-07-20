@@ -1,6 +1,6 @@
 <?php
 $to = "info@junctiontech.in";
-$subject="Contact Enquiry";
+$subject="Contact Enquiry-$name";
 $name= $_POST['name'] ;
 $email = $_POST['email'] ;
 $text = $_POST['text'] ;
@@ -14,7 +14,7 @@ $message = "
 <tr>
 <th>Name</th>
 <th>email</th>
-<th>Requirement</th>
+<th>Message</th>
 </tr>
 <tr>
 <td>  $name </td>
@@ -32,7 +32,7 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 $sent =mail($to,$subject,$message,$headers);
    if ($sent) { 
-      header("Location: http://junctiontech.in/thankyou.html");
+      header("Location: http://junctiontech.in/thankyou.php");
       exit();
     } else {
       print "We encountered an error sending your mail"; 

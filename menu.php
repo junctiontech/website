@@ -5,12 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="We are a Web, Mobile and Desktop Software Application Development Company.We are experts in Cloud Application Development, PHP.Best Open source ERP">
+	<meta name="description" content="We are a Web, Mobile and Desktop Software Application Development Company.We are experts in Cloud Application Development, PHP.Best Open source ERP .Software Company: We are one of the top Software Development Company in Bhopal,India">
+<meta name="keywords" content="software company, software company in bhopal,software company in bhopal, software development company india, software development company in india, Web development, Web Designing, Software development, customized software solutions worldwide, mobile and web applications development, mobile applications development, e-branding and web marketing, bhopal madhya Pradesh india ,Junction Software pvt.LTD., Junction, Junction Tech,top software company,software companies in bhopal,software companies in bhopal" />
+    <meta name="author" content="junction software pvt. Ltd.">
+<meta name="robots" content="index,follow">
 		<meta name="author" content="junction software pvt. Ltd.">
 	<!-- Favicons-->
 		<link rel="shortcut icon" href="img/favicon16.png" type="image/x-icon"/>
 		<link rel="shortcut icon" href="img/favicon32.png" type="image/x-icon"/>
-	<title>JunctionTech | Android</title>
+	<title>JunctionTech | </title>
 	<!-- Bootstrap Core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -38,7 +41,7 @@
 				<header class="logo-env">
 					<!-- logo -->
     				<div class="logo">
-    					<a href="index.php">
+    					<a href="index.html">
     						<img src="img/junction_ring.png"  alt="" />
     					</a>
     				</div>
@@ -55,17 +58,17 @@
     				<!-- add class "multiple-expanded" to allow multiple submenus to open -->
     				<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
     				<!-- Search Bar -->
-    				<li class="active opened">
-    					<a href="development.php" onclick="window.location='development.php'">
+    				<li class="active ">
+    					<a>
     						<span>Software Development</span>
     					</a>
-    					<ul>
+    					<ul class="opened">
     						<li>
     							<a href="webtechnology.php" onclick="window.location='webtechnology.php'">
     								<span class="submenu">Web Technologies</span>
     							</a>
-    							<ul>
-    								<li>
+    							<ul >
+    								<li class="opened">
     									<a href="php.php">
     										<span class="submenu">PHP Frameworks</span>
     									</a>
@@ -92,18 +95,18 @@
     					</ul>
     				</li>
 
-    				<li class="active">
-    					<a href="training-and-development.php" onclick="window.location='training-and-development.php'">
+    				<li class="active ">
+    					<a >
     						<span>Training</span>
     					</a>
     					<ul>
-    						<li>
+    						<li >
     							<a href="training-web-development.php">
     								<span class="submenu">Web Development</span>
     							</a>
     						</li>
     						<li>
-    							<a href="training-mobile-development.htm">
+    							<a href="training-mobile-development.php">
     								<span class="submenu">Mobile Development</span>
     							</a>
     						</li>
@@ -119,12 +122,12 @@
 								</li>
     					</ul>
     				</li>
-    				<li class="active">
-    					<a href="erp.php" onclick="window.location='erp.php'" >
+    				<li class="active ">
+    					<a >
     						<span>ERP</span>
     					</a>
-    					<ul>
-    						<li>
+    					<ul >
+    						<li >
     							<a href="erp-sap.php">
     								<span class="submenu">SAP</span>
     							</a>
