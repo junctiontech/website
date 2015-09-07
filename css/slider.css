@@ -103,7 +103,7 @@
 }
 .latesttext {
   padding-top: 13px;
-  font-family: mytahoma;
+  /*font-family: mytahoma;*/
   font-size: 14px;
   color: black !important;
   text-align: center;

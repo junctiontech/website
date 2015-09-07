@@ -117,3 +117,44 @@
 [18-Jul-2015 12:07:48 Etc/GMT] PHP Notice:  Undefined index: email in /home/junctwhx/public_html/contact.php on line 5
 [18-Jul-2015 12:07:48 Etc/GMT] PHP Notice:  Undefined index: text in /home/junctwhx/public_html/contact.php on line 6
 [20-Jul-2015 07:16:58 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[28-Jul-2015 01:41:19 Etc/GMT] PHP Notice:  Undefined variable: name in /home/junctwhx/public_html/contact.php on line 3
+[28-Jul-2015 01:41:19 Etc/GMT] PHP Notice:  Undefined index: text in /home/junctwhx/public_html/contact.php on line 6
+[05-Aug-2015 23:54:13 Etc/GMT] PHP Notice:  Undefined index: name in /home/junctwhx/public_html/enquiry.php on line 3
+[05-Aug-2015 23:54:13 Etc/GMT] PHP Notice:  Undefined index: email in /home/junctwhx/public_html/enquiry.php on line 5
+[05-Aug-2015 23:54:13 Etc/GMT] PHP Notice:  Undefined index: requirement in /home/junctwhx/public_html/enquiry.php on line 6
+[05-Aug-2015 23:54:15 Etc/GMT] PHP Notice:  Undefined variable: name in /home/junctwhx/public_html/contact.php on line 3
+[05-Aug-2015 23:54:15 Etc/GMT] PHP Notice:  Undefined index: name in /home/junctwhx/public_html/contact.php on line 4
+[05-Aug-2015 23:54:15 Etc/GMT] PHP Notice:  Undefined index: email in /home/junctwhx/public_html/contact.php on line 5
+[05-Aug-2015 23:54:15 Etc/GMT] PHP Notice:  Undefined index: text in /home/junctwhx/public_html/contact.php on line 6
+[05-Aug-2015 23:54:22 Etc/GMT] PHP Notice:  Undefined index: name in /home/junctwhx/public_html/job_apply.php on line 3
+[05-Aug-2015 23:54:22 Etc/GMT] PHP Notice:  Undefined index: phone in /home/junctwhx/public_html/job_apply.php on line 5
+[05-Aug-2015 23:54:22 Etc/GMT] PHP Notice:  Undefined index: employer in /home/junctwhx/public_html/job_apply.php on line 6
+[05-Aug-2015 23:54:22 Etc/GMT] PHP Notice:  Undefined index: email in /home/junctwhx/public_html/job_apply.php on line 7
+[05-Aug-2015 23:54:22 Etc/GMT] PHP Notice:  Undefined index: designation in /home/junctwhx/public_html/job_apply.php on line 8
+[05-Aug-2015 23:54:22 Etc/GMT] PHP Notice:  Undefined index: filename in /home/junctwhx/public_html/job_apply.php on line 9
+[05-Aug-2015 23:54:22 Etc/GMT] PHP Notice:  Undefined index: filename in /home/junctwhx/public_html/job_apply.php on line 10
+[05-Aug-2015 23:54:22 Etc/GMT] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/junctwhx/public_html/job_apply.php on line 10
+[05-Aug-2015 23:54:22 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[05-Aug-2015 23:54:22 Etc/GMT] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/junctwhx/public_html/job_apply.php on line 71
+[06-Aug-2015 05:38:24 Etc/GMT] PHP Notice:  Undefined variable: name in /home/junctwhx/public_html/contact.php on line 3
+[06-Aug-2015 05:38:24 Etc/GMT] PHP Notice:  Undefined index: text in /home/junctwhx/public_html/contact.php on line 6
+[08-Aug-2015 06:58:44 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[08-Aug-2015 06:58:44 Etc/GMT] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/junctwhx/public_html/job_apply.php on line 71
+[08-Aug-2015 07:00:11 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[08-Aug-2015 07:00:11 Etc/GMT] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/junctwhx/public_html/job_apply.php on line 71
+[08-Aug-2015 12:04:46 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[08-Aug-2015 12:04:46 Etc/GMT] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/junctwhx/public_html/job_apply.php on line 71
+[08-Aug-2015 12:05:01 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[08-Aug-2015 12:05:01 Etc/GMT] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/junctwhx/public_html/job_apply.php on line 71
+[02-Sep-2015 14:40:00 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[02-Sep-2015 14:40:00 Etc/GMT] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/junctwhx/public_html/job_apply.php on line 71
+[02-Sep-2015 14:40:47 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[02-Sep-2015 14:40:47 Etc/GMT] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/junctwhx/public_html/job_apply.php on line 71
+[02-Sep-2015 14:40:59 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[02-Sep-2015 14:40:59 Etc/GMT] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/junctwhx/public_html/job_apply.php on line 71
+[02-Sep-2015 14:42:03 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[02-Sep-2015 14:42:03 Etc/GMT] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/junctwhx/public_html/job_apply.php on line 71
+[02-Sep-2015 14:43:20 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[02-Sep-2015 14:43:20 Etc/GMT] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/junctwhx/public_html/job_apply.php on line 71
+[04-Sep-2015 03:05:24 Etc/GMT] PHP Notice:  Undefined variable: attachment in /home/junctwhx/public_html/job_apply.php on line 39
+[04-Sep-2015 03:05:24 Etc/GMT] PHP Warning:  mail(): Multiple or malformed newlines found in additional_header in /home/junctwhx/public_html/job_apply.php on line 71

@@ -42,7 +42,7 @@ include 'menu.php';
 					</a>
 					
 					<h4>
-					<a href="junction-erp.php" class="name">Junction ERP</a>
+					<a href="http://junctionerp.com/" target="_blank" class="name">Junction ERP</a>
 					</h4>
 				</div>
 				

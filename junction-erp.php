@@ -28,7 +28,23 @@ include 'menu.php';
 				</div>
 				
 			</div>-->
-
+                      	<div class="row">
+			
+			<div class="col-sm-4">
+				
+				<!-- Portfolio Item in Widget -->
+				<div class="portfolio-item">
+					<a href="http://junctionerp.com/" target="_blank" class="image">
+						<img src="img/erp.png" class="img-responsive img-center" alt="sap" width="146" height="146">
+					</a>
+					
+					<h4>
+					<a href="http://junctionerp.com/" target="_blank" class="name">Junction ERP</a>
+					</h4>
+				</div>
+				
+			</div>
+                     </div>
 
 	<br />
 	 <?php 

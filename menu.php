@@ -64,7 +64,7 @@
     					</a>
     					<ul class="opened">
     						<li>
-    							<a href="webtechnology.php" onclick="window.location='webtechnology.php'">
+    							<a href="webtechnology.php" >
     								<span class="submenu">Web Technologies</span>
     							</a>
     							<ul >
@@ -76,11 +76,11 @@
     							</ul>
     						</li>
     						<li class="opened">
-    							<a href="mobileplatform.php" onclick="window.location='mobileplatform.php'" >
+    							<a href="mobileplatform.php"  >
     								<span class="submenu">Mobile Platforms</span>
     							</a>
     							<ul>
-    								<li class="active opened">
+    								<li class="opened">
     									<a href="android.php">
     										<span class="submenu">Android</span>
     									</a>

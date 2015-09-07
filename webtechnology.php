@@ -9,7 +9,7 @@ include 'menu.php';
 			<div class="col-sm-12">
 				
 				
-				<p>Junction Tech possesses more than 11 years of development experienced developers in application software and web applications, across some of the most widely used technologies.</p>
+				<p>Junction Tech possesses more than 6 years of development experienced developers in application software and web applications, across some of the most widely used technologies.</p>
 				<p>We have helped our customers build desktop applications and enterprise software such as CRM, DMS, accounting software, office suites, graphics software and media players. We have also developed browser or web-based applications such as word processors, online spreadsheets, presentation tools, project management software, CRM and point-of-sale utilities for our customers.</p>
 				
 			</div>
