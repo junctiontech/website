@@ -72,12 +72,12 @@ include 'menu.php';
 			
 					<!-- Portfolio Item in Widget -->
 					<div class="portfolio-item">
-						<a href="training-custom.php" class="image">
+						<a href="javascript:;" class="image">
 							<img src="img/customdevelopment.png" class="img-responsive img-center" alt="Custom Training" width="146" height="146">
 						</a>
 						
 						<h4>
-						<a href="training-custom.php" class="name">Custom</a>
+						<a href="javascript:;" class="name">Custom</a>
 						</h4>
 					</div>
 					
