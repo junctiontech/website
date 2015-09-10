@@ -109,7 +109,7 @@ $mail->addAttachment($uploadfile,$filename);
 if (!$mail->send()) {
     print "We encountered an error sending your mail"; 
 } else {
-    header("Location: http://junctiontech.in/thankyou.php");
+    header("Location: http://junctiontech.azurewebsites.net/thankyou.php");
 	  exit();
 }
 
