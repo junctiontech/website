@@ -107,7 +107,7 @@ $mail->addAttachment($uploadfile,$filename);
 
 //send the message, check for errors
 if (!$mail->send()) {
-    print "We encountered an error sending your mail"; 
+    print "We encountered an error sending your mail testing"; 
 } else {
     header("Location: http://junctiontech.in/thankyou.php");
 	  exit();
