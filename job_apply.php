@@ -60,7 +60,7 @@ $mail->isSMTP();
 // 0 = off (for production use)
 // 1 = client messages
 // 2 = client and server messages
-$mail->SMTPDebug = 0;
+$mail->SMTPDebug = 5;
 
 //Ask for HTML-friendly debug output
 $mail->Debugoutput = 'html';
@@ -107,7 +107,7 @@ $mail->addAttachment($uploadfile,$filename);
 
 //send the message, check for errors
 if (!$mail->send()) {
-    print "We encountered an error sending your mail testing"; 
+    print "We encountered an error sending your mail"; 
 } else {
     header("Location: http://junctiontech.in/thankyou.php");
 	  exit();
