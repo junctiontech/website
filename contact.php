@@ -2,7 +2,7 @@
 $subject="Contact Enquiry-$name";
 $name= $_POST['name'] ;
 $email = $_POST['email'] ;
-$text = $_POST['text'] ;
+$text = $_POST['message'] ;
 $message = "
 <html>
 <head>
