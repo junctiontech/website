@@ -1,45 +1,4 @@
 <?php
-
-$name= $_POST['name'] ;
-$subject = "Job Application- $name";
-$phone= $_POST['phone'] ;
-$employer= $_POST['employer'] ; 
-$email = $_POST['email'] ; 
-$designation= $_POST['designation'] ; 
-$filename = $_FILES["filename"]["name"];
-
-	$uploadfile = tempnam(sys_get_temp_dir(), sha1($_FILES['filename']['name']));
-	move_uploaded_file($_FILES['filename']['tmp_name'], $uploadfile);
-$message = "
-<html>
-<head>
-<title>Job Application</title>
-</head>
-<body>
-
-<table>
-<tr>
-<th>Name</th>
-<th>Phone Number</th>
-<th>Email</th>
-<th>Employer</th>
-<th>Designation</th>
-<th>File</th>
-</tr>
-<tr>
-<td>  $name </td>
-<td>  $phone</td>
-<td>  $email</td>
-<td>  $employer</td>
-<td>  $designation</td>
-<td>  $filename </td>
-</tr>
-</table>
-</body>
-</html>
-";
-
-  	
 /**
  * This example shows settings to use when sending via Google's Gmail servers.
  */
@@ -48,7 +7,7 @@ $message = "
 //This should be done in your php.ini, but this is how to do it if you don't have access to that
 date_default_timezone_set('Etc/UTC');
 
-require 'PHPMailer/PHPMailerAutoload.php';
+require '../PHPMailerAutoload.php';
 
 //Create a new PHPMailer instance
 $mail = new PHPMailer;
@@ -60,7 +19,7 @@ $mail->isSMTP();
 // 0 = off (for production use)
 // 1 = client messages
 // 2 = client and server messages
-$mail->SMTPDebug = 0;
+$mail->SMTPDebug = 5;
 
 //Ask for HTML-friendly debug output
 $mail->Debugoutput = 'html';
@@ -78,40 +37,36 @@ $mail->SMTPSecure = 'tls';
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "dev4junction@gmail.com";
+$mail->Username = "rohitsingh96thakur@gmail.com";
 
 //Password to use for SMTP authentication
-$mail->Password = 'initial1$';
+$mail->Password = '';
 
 //Set who the message is to be sent from
-$mail->setFrom($email, $name);
+$mail->setFrom('from@example.com', 'First Last');
 
 //Set an alternative reply-to address
-$mail->addReplyTo($email, $name);
+$mail->addReplyTo('replyto@example.com', 'First Last');
 
 //Set who the message is to be sent to
-$mail->addAddress('dev4junction@gmail.com', $name);
+$mail->addAddress('rohitsingh96thakur@gmail.com', 'John Doe');
 
 //Set the subject line
-$mail->Subject = $subject;
+$mail->Subject = 'PHPMailer GMail SMTP test';
 
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
-$mail->msgHTML($message);
+$mail->msgHTML("hello");
 
 //Replace the plain text body with one created manually
 $mail->AltBody = 'This is a plain-text message body';
 
 //Attach an image file
-$mail->addAttachment($uploadfile,$filename);
+$mail->addAttachment('images/rohit resume.pdf');
 
 //send the message, check for errors
 if (!$mail->send()) {
-    print "We encountered an error sending your mail"; 
+    echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
-    header("Location: http://junctiontech.in/thankyou.php");
-	  exit();
+    echo "Message sent!";
 }
-
-
-?>
