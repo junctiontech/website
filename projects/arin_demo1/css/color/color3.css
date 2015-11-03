@@ -1,0 +1,49 @@
+a:hover, a:focus, .main-navigation ul.navbar-nav li.open>a, .main-navigation ul.navbar-nav>li.active>a, .main-navigation ul.navbar-nav>li a:hover, .main-navigation ul.navbar-nav>li a:focus, .main-navigation ul.navbar-nav>li>a:hover, .main-navigation ul.navbar-nav>li>a:focus, .footer .useful-links .useful-links-menu ul li a:hover, .footer .copyright a:hover, .content-meta>span a:hover, .hentry.format-quote a:hover, .hentry.format-link a:hover, .comments-area .comment-block .comment-reply-link:hover, body.single:not(.single-blog) .content-meta>span a:hover, .content-meta-button>a:hover, .tooltip-inner .icon-share:hover, .hentry .event-time .event-countdown, .hentry .event-time .event-countdown .dash .time_number .digit, .hentry .event-time .event-countdown .dash .dash_title, .social-list li a:hover, .jp-controls-container .jp-controls a:hover, .contact-info-wrap .contact-info .contact-detail ul li i, .content-summary .donate-progress-label .donate-progress-ed span, .content-summary .donate-progress-label .donate-progress-go span, .featured-causes .view-all-cause-btn:hover {
+color:#376da3;
+}
+@media screen and (min-width: 992px) {
+.home .main-navigation ul.navbar-nav>.active>a, .home .main-navigation ul.navbar-nav>li>a:hover, .home .noo-header.scroll-fixed .main-navigation ul.navbar-nav>.active>a, .home .noo-header.scroll-fixed .main-navigation ul.navbar-nav>li>a:hover {
+color:#376da3;
+}
+}
+@media screen and (max-width: 991px) {
+.home .main-navigation ul.navbar-nav>.active>a, .home .main-navigation ul.navbar-nav>li>a:hover {
+color:#376da3;
+}
+}
+.back-to-top:hover, .pagination .page-numbers.current, .pagination a.page-numbers:hover, .entry-tags a:hover, .donate-modal .donate-form-radio .donate-form-group.selected label, .tag-cloud .tag-cloud-list a:hover, .parallax .overlay, .jp-controls-container .jp-play-bar, .jp-controls-container .jp-volume-bar-value, .noo-accordion.panel-group .panel-heading:hover .panel-title a, .noo-accordion.panel-group .panel-heading.active .panel-title a, .nav-tabs>li>a:hover, .tabs-left>.nav-tabs>li>a:hover, .tabs-left>.nav-tabs>li.active>a, .tabs-left>.nav-tabs>li.active>a:hover, .tabs-left>.nav-tabs>li.active>a:focus, .noo-progress-bar .progress-bar-primary, .btn.btn-primary, .noo-slider .slider-control, .content-summary .donate-progress .donate-progress-bar, .posts-loop.slider .carousel-control, .our-work-slider .noo-slider .slider-control:hover {
+	background:#376da3;
+}
+@media screen and (min-width: 768px) {
+.posts-loop.slider .loop-thumb .loop-thumb-wrap .loop-thumb-content .carousel-indicators li.active {
+background:#376da3;
+}
+}
+.read-more:hover, .datepicker-calendar .datepicker table tr td.active:hover, .datepicker-calendar .datepicker table tr td.active:hover:hover, .datepicker-calendar .datepicker table tr td.active.active, .datepicker-calendar .datepicker table tr td.active:hover.active, .datepicker-calendar .datepicker table tr td.today, .datepicker-calendar .datepicker table tr td.today:hover, .datepicker-calendar .datepicker table tr td.today.disabled, .datepicker-calendar .datepicker table tr td.today.disabled:hover, .datepicker-calendar .datepicker table tr td span.active:hover, .datepicker-calendar .datepicker table tr td span.active:hover:hover, .datepicker-calendar .datepicker table tr td span.active.active, .datepicker-calendar .datepicker table tr td span.active:hover.active {
+	background:#376da3!important;
+}
+.donate-modal .donate-form-text .donate-form-group input[type="text"]:focus {
+	border-color:#376da3;
+}
+.main-navigation ul.navbar-nav>li>.dropdown-menu {
+	border-top:2px solid #376da3;
+}
+.main-navigation ul.navbar-nav>li>.dropdown-menu:before {
+	border-bottom:8px solid #376da3;
+}
+.footer-newsletter form .input-box input:focus {
+	-webkit-box-shadow:0 0 8px 0 #376da3;
+	box-shadow:0 0 8px 0 #376da3;
+}
+.btn.btn-primary:hover, .posts-loop.slider .carousel-control:hover {
+	background:#24476a;
+}
+.main-navigation ul.navbar-nav .menu-item-donate .btn:hover, .main-navigation ul.navbar-nav .menu-item-donate .btn:focus {
+	background:#24476a!important;
+}
+.content-summary .donate-progress {
+	background:#71a0cf;
+}
+.our-work .our-work-img-wrap .our-work-img-bg {
+	background:#84add5;
+}

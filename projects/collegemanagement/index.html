@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  	<meta charset="utf-8">
+    <title>College Management</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/superfish.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="fontello/css/fontello.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+
+  </head>
+  <body>
+  
+  <header>
+  	<div class="container">
+	<div class="row">
+		<div class="col-md-3 col-sm-3 col-xs-3">
+			<a href="javascript:;" id="logo"></a>
+		</div>
+		<div class="col-md-9 col-sm-9 col-xs-9">
+			<div class=" pull-right show-xs">
+				<a href="index.html" class="button_top">Register</a> 
+				<a href="admin.php" class="button_top">View Students</a>
+			</div>
+		</div>
+	</div>
+</div>
+</header><!-- End header -->
+
+<section id="login_bg" style="height:730px;">
+<div  class="container">
+<div class="row">
+	<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+		<div id="login">
+			<p class="text-center">
+				<img src="img/college_Management.png" alt="">
+			</p>
+			<hr>
+			<form method="post" action="registration.php">
+				<div class="form-group">
+					<input type="text" class=" form-control required" id="firstname" name="user_fname" placeholder="First Name">
+					<span class="input-icon"><i class=" icon-user"></i></span>
+				</div>
+				<div class="form-group">
+					<input type="text" class=" form-control required" id="lastname" name="user_lname" placeholder="Last Name">
+					<span class="input-icon"><i class=" icon-user"></i></span>
+				</div>
+				<div class="form-group">
+					<input type="text" id="user_email" class=" form-control required" value="" placeholder="Email" name="user_email"  >
+					<span class="input-icon"><i class="icon-email"></i></span><div id="status"></div>
+				</div>
+				<div class="form-group">
+					<input type="text" id="user_mobile" class=" form-control required"  placeholder="Mobile Number" name="user_mobile">
+					<span class="input-icon"><i class=" icon-user"></i></span><div id="status_mob"></div>
+				</div>
+				<div class="form-group">
+					<input type="password" class=" form-control required" id="password1" placeholder="Password" name="user_password">
+					<span class="input-icon"><i class=" icon-lock"></i></span>
+				</div>
+				<div class="form-group">
+					<input type="text" class=" form-control required" id="" placeholder="Course" name="user_course">
+					<span class="input-icon"><i class=" icon-book"></i></span>
+				</div>
+                <div id="pass-info" class="clearfix"></div>
+				<button class="button_fullwidth">Create an account</button>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+</section><!-- End register -->
+
+<footer>
+<div id="copy_right">© Junction Tech</div>
+</footer>
+
+<div id="toTop">Back to top</div>
+
+<!-- JQUERY -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<!-- OTHER JS --> 
+<script src="js/superfish.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/retina.min.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/classie.js"></script>
+<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+<SCRIPT type="text/javascript">
+<!--
+/*
+Credits: Bit Repository
+Source: http://www.bitrepository.com/web-programming/ajax/username-checker.html 
+*/
+
+pic1 = new Image(16, 16); 
+pic1.src = "loader.gif";
+
+$(document).ready(function(){
+
+$("#user_email").change(function() { 
+
+var usr = $("#user_email").val();
+
+if(usr.length >= 4)
+{
+$("#status").html('<img src="loader.gif" align="absmiddle">&nbsp;Checking availability...');
+
+    $.ajax({  
+    type: "POST",  
+    url: "check.php",  
+    data: "user_email="+ usr,  
+    success: function(msg){  
+   
+   $("#status").ajaxComplete(function(event, request, settings){ 
+
+	if(msg == 'OK')
+	{ 
+        $("#user_email").removeClass('object_error'); // if necessary
+		$("#user_email").addClass("object_ok");
+		$(this).html('&nbsp;<img src="tick.gif" align="absmiddle">');
+	}  
+	else  
+	{  
+	
+		$("#user_email").removeClass('object_ok'); // if necessary
+		$("#user_email").addClass("object_error");
+		$(this).html(msg);
+	}  
+   
+   });
+
+ } 
+   
+  }); 
+
+}
+else
+	{
+	$("#status").html('<font color="red">The user Email should have at least <strong>4</strong> characters.</font>');
+	$("#user_email").removeClass('object_ok'); // if necessary
+	$("#user_email").addClass("object_error");
+	}
+
+});
+
+});
+
+//-->
+</SCRIPT>
+<SCRIPT type="text/javascript">
+<!--
+/*
+Credits: Bit Repository
+Source: http://www.bitrepository.com/web-programming/ajax/username-checker.html 
+*/
+
+pic1 = new Image(16, 16); 
+pic1.src = "loader.gif";
+
+$(document).ready(function(){
+
+$("#user_mobile").change(function() { 
+
+var usr = $("#user_mobile").val();
+
+if(usr.length >= 4)
+{
+$("#status_mob").html('<img src="loader.gif" align="absmiddle">&nbsp;Checking availability...');
+
+    $.ajax({  
+    type: "POST",  
+    url: "check_mob.php",  
+    data: "user_mobile="+ usr,  
+    success: function(msg){  
+   
+   $("#status_mob").ajaxComplete(function(event, request, settings){ 
+
+	if(msg == 'OK')
+	{ 
+        $("#user_mobile").removeClass('object_error'); // if necessary
+		$("#user_mobile").addClass("object_ok");
+		$(this).html('&nbsp;<img src="tick.gif" align="absmiddle">');
+	}  
+	else  
+	{  
+	
+		$("#user_mobile").removeClass('object_ok'); // if necessary
+		$("#user_mobile").addClass("object_error");
+		$(this).html(msg);
+	}  
+   
+   });
+
+ } 
+   
+  }); 
+
+}
+else
+	{
+	$("#status_mob").html('<font color="red">The user_mobile should have at least <strong>4</strong> characters.</font>');
+	$("#user_mobile").removeClass('object_ok'); // if necessary
+	$("#user_mobile").addClass("object_error");
+	}
+
+});
+
+});
+
+//-->
+</SCRIPT>
+  </body>
+</html>

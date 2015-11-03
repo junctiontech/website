@@ -1,0 +1,5 @@
+M_report name email phone mobile email performance
+C_report name email phone mobile email performance
+R_admin servey location investment
+R_Rohit servey location investment
+R_VRM servey location investment
