@@ -11,10 +11,13 @@
     <meta name="author" content="junction software pvt. Ltd.">
 <system.webServer>
     <staticContent>
-      <remove fileExtension=".woff" /> <!-- In case IIS already has this mime type -->
-      <mimeMap fileExtension=".woff" mimeType="application/x-font-woff" />
-    </staticContent>    
-  </system.webServer>
+        <mimeMap fileExtension=".eot" mimeType="application/vnd.ms-fontobject" />
+        <mimeMap fileExtension=".ttf" mimeType="application/octet-stream" />
+        <mimeMap fileExtension=".svg" mimeType="image/svg+xml" />
+        <mimeMap fileExtension=".woff" mimeType="application/font-woff" />
+        <mimeMap fileExtension=".woff2" mimeType="application/font-woff2" />
+    </staticContent>
+</system.webServer>
     <title>Junction Tech- Get the edge |Software Development Company</title>
 	  <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon16.png" type="image/x-icon"/>
