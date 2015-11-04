@@ -9,9 +9,13 @@
 <meta name="keywords" content="software company, software company in bhopal,software company in bhopal, software development company india, software development company in india, Web development, Web Designing, Software development, customized software solutions worldwide, mobile and web applications development, mobile applications development, e-branding and web marketing, bhopal madhya Pradesh india ,Junction Software pvt.LTD., Junction, Junction Tech,top software company,software companies in bhopal" />
 <meta name="robots" content="index,follow">
     <meta name="author" content="junction software pvt. Ltd.">
-
+<system.webServer>
+    <staticContent>
+      <remove fileExtension=".woff" /> <!-- In case IIS already has this mime type -->
       <mimeMap fileExtension=".woff" mimeType="application/font-woff" />
-   
+       <mimeMap fileExtension=".ttf" mimeType="application/octet-stream" />
+    </staticContent>    
+  </system.webServer>
     <title>Junction Tech- Get the edge |Software Development Company</title>
 	  <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon16.png" type="image/x-icon"/>
