@@ -52,7 +52,7 @@ $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = 'bitnami';
 $db['default']['database'] = 'sor';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
@@ -64,6 +64,8 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-
+echo '<pre>';
+print_r($db['default']);
+echo '</pre>';
 /* End of file database.php */
 /* Location: ./application/config/database.php */
