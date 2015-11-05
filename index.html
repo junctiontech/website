@@ -9,15 +9,7 @@
 <meta name="keywords" content="software company, software company in bhopal,software company in bhopal, software development company india, software development company in india, Web development, Web Designing, Software development, customized software solutions worldwide, mobile and web applications development, mobile applications development, e-branding and web marketing, bhopal madhya Pradesh india ,Junction Software pvt.LTD., Junction, Junction Tech,top software company,software companies in bhopal" />
 <meta name="robots" content="index,follow">
     <meta name="author" content="junction software pvt. Ltd.">
-    <configuration>
-<system.webServer>
-    <staticContent>
-      <remove fileExtension=".woff" /> <!-- In case IIS already has this mime type -->
-      <mimeMap fileExtension=".woff" mimeType="application/font-woff" />
-       <mimeMap fileExtension=".ttf" mimeType="application/octet-stream" />
-    </staticContent>    
-  </system.webServer>
-  </configuration>
+    
     <title>Junction Tech- Get the edge |Software Development Company</title>
 	  <!-- Favicons-->
     <link rel="shortcut icon" href="img/favicon16.png" type="image/x-icon"/>
@@ -42,23 +34,6 @@
     <script src="js/jquery.js"></script>
 	    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-    adminManager.CommitPath = "MACHINE/WEBROOT/APPHOST/Default Web Site";
-    var staticContentSection = adminManager.GetAdminSection("system.webServer/staticContent", "MACHINE/WEBROOT/APPHOST/Default Web Site");
-    var staticContentCollection = staticContentSection.Collection;
-
-    var mimeMapElement = staticContentCollection.CreateNewElement("mimeMap");
-    mimeMapElement.Properties.Item("fileExtension").Value = "syx";
-    mimeMapElement.Properties.Item("mimeType").Value = "application/octet-stream";
-    staticContentCollection.AddElement(mimeMapElement);
-
-    var mimeMapElement1 = staticContentCollection.CreateNewElement("mimeMap");
-    mimeMapElement1.Properties.Item("fileExtension").Value = "tab";
-    mimeMapElement1.Properties.Item("mimeType").Value = "text/plain";
-    staticContentCollection.AddElement(mimeMapElement1);
-
-    adminManager.CommitChanges();
-    </script>
 </head>
 
 <body style=" background: url(img/home_bg.jpg) #f6f5f6 no-repeat center top;background-size: cover; background-attachment: fixed;">
