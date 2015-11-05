@@ -58,15 +58,7 @@ header('Content-Type: text/xml; charset=' . get_option('blog_charset'), true);
 <?php
 exit;
 }
-echo"<configuration>
-<system.webServer>
-    <staticContent>
-      <remove fileExtension=\".woff\" /> <!-- In case IIS already has this mime type -->
-      <mimeMap fileExtension=\".woff\" mimeType=\"application/font-woff\" />
-       <mimeMap fileExtension=\".ttf\" mimeType=\"application/octet-stream\" />
-    </staticContent>    
-  </system.webServer>
-  </configuration>";
+
 include_once(ABSPATH . 'wp-admin/includes/admin.php');
 include_once(ABSPATH . WPINC . '/class-IXR.php');
 include_once(ABSPATH . WPINC . '/class-wp-xmlrpc-server.php');
