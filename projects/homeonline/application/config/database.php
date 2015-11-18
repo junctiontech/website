@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '127.0.0.1',
+	'hostname' => 'localhost:8888',
 	'username' => 'root',
 	'password' => 'bitnami',
 	'database' => 'homeonline',
@@ -97,7 +97,7 @@ $db['default'] = array(
 
 $db['db_junction'] = array(
 	'dsn'	=> '',
-	'hostname' => '127.0.0.1',
+	'hostname' => 'localhost:8888',
 	'username' => 'root',
 	'password' => 'bitnami',
 	'database' => 'homeonline_junction',
