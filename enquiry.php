@@ -95,8 +95,9 @@ $mail->AltBody = 'This is a plain-text message body';
 if (!$mail->send()) {
     print "We encountered an error sending your mail"; 
 } else {
-    header("Location: http://junctiontech.azurewebsites.net/thankyou.php");
-	  exit();
+	$sever=$_SERVER['HTTP_HOST'];
+    header("Location: $sever/thankyou.php");
+    	  exit();
 }
 
 ?>

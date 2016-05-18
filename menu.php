@@ -41,7 +41,7 @@
 				<header class="logo-env">
 					<!-- logo -->
     				<div class="logo">
-    					<a href="index.html">
+    					<a href="..">
     						<img src="img/junction_ring.png"  alt="" />
     					</a>
     				</div>
