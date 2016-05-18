@@ -109,8 +109,7 @@ $mail->addAttachment($uploadfile,$filename);
 if (!$mail->send()) {
     print "We encountered an error sending your mail"; 
 } else {
-   $sever=$_SERVER['HTTP_HOST'];
-    header("Location: $sever/thankyou.php");
+   header("Location: http://junctiontech.in/thankyou.php");
 	  exit();
 }
 
