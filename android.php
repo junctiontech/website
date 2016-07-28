@@ -17,8 +17,6 @@ include 'menu.php';
 				<dd>Integration with Third Party APIs like FB, Twitter etc..</dd>
 				<br>
 				<dd>Business apps development to provide a fantastic user experience</dd>
-
-
 			</dl>
 		</div>
 	</div>
